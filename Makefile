@@ -1,5 +1,5 @@
 # Default tests run with make test and make quick-tests
-NOSE_TESTS?=tests gxformat2
+NOSE_TESTS?=tests mir
 # Default environment for make tox
 ENV?=py27
 # Extra arguments supplied to tox command
@@ -10,12 +10,12 @@ VENV?=.venv
 IN_VENV=if [ -f $(VENV)/bin/activate ]; then . $(VENV)/bin/activate; fi;
 # TODO: add this upstream as a remote if it doesn't already exist.
 UPSTREAM?=jmchilton
-SOURCE_DIR?=gxformat2
+SOURCE_DIR?=mir
 BUILD_SCRIPTS_DIR=scripts
 VERSION?=$(shell python $(BUILD_SCRIPTS_DIR)/print_version_for_release.py $(SOURCE_DIR))
 DOC_URL?=https://gxformat2.readthedocs.org
-PROJECT_URL?=https://github.com/jmchilton/gxformat2
-PROJECT_NAME?=gxformat2
+PROJECT_URL?=https://github.com/jmchilton/markdown-it-reporter
+PROJECT_NAME?=markdown-it-reporter
 TEST_DIR?=tests
 DOCS_DIR?=docs
 
