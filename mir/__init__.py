@@ -1,6 +1,6 @@
 """The public interface or entry point for the Format 2 workflow code."""
 
-__version__ = '0.0.2'
+__version__ = '0.1.0.dev0'
 
 PROJECT_NAME = "markdown-it-reporter"
 PROJECT_OWNER = PROJECT_USERAME = "galaxyproject"
