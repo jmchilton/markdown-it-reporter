@@ -6,7 +6,7 @@ History
 .. to_doc
 
 ---------------------
-0.0.2.dev0
+0.0.2 (2020-08-21)
 ---------------------
 
 * Implement customizable masthead links.
