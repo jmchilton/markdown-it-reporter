@@ -27,8 +27,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://galaxyproject.org">Galaxy</a></li>
-            <li><a href="https://planemo.readthedocs.org">Planemo</a></li>
+            {% for link in links %}
+            <li><a href="{{ link.href }}">{{ link.title }}</a></li>
+            {% endfor %}
           </ul>
           <div class="navbar-form navbar-right">
           </div>

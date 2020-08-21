@@ -5,7 +5,7 @@ from jinja2 import Environment, PackageLoader
 from pkg_resources import resource_string
 
 
-def html_report(markdown, title):
+def html_report(markdown, title, links=[]):
     """"""
     environment = {}
     environment['title'] = title
@@ -17,6 +17,7 @@ def html_report(markdown, title):
         'jquery_script': __script("jquery.min"),
         'bootstrap_script': __script("bootstrap.min"),
         'markdown_it_script': __script('markdown-it.min'),
+        'links': links,
     })
     return render(None, 'report_html.tpl', environment)
 
